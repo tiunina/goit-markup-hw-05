@@ -399,8 +399,87 @@
           </li>
         </ul>
       </div>
-     
+     <div class="form-footer">
+      
+      <div class="footer-input">
+        <label for="email-footer" class="label-subscribe">Subscribe</label>
+        <input type="email" class="email-footer" name="email-subscribe" id="email-footer" placeholder="E-mail">
+      </div>
+    
+      <button type="submit" class="subscribe-footer">Subscribe
+        <svg class="icon-footer" width="24" height="20">
+          <use href="./images/icons.svg#icon-send"></use>
+        </svg>
+      </button>
+     </div>
     </div>
   </footer>
+ <!-- ============ FORM ============ -->
+ <div class="backdrop-wrapper ">
+  <div class="modal-window">
+
+    <button class="close-btn" type="button">
+      <svg class="close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="title-form">Leave your contacts and we will call you back</p>
+
+    <form class="review-form">
+      <div class="input-wrapper">
+        <label for="first-name" class="label-form">Name</label>
+        <div class="input-wrapper-icon">
+          <input type="text" class="input-form" name="first-name" id="first-name" pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+" title="Alona" required>
+          <svg class="icon-inside-input" width="12" height="12">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>       
+      </div>
+
+      <div class="input-wrapper">
+        <label for="user-tel" class="label-form">Phone</label>
+        <div class="input-wrapper-icon">
+          <input type="tel" name="user-tel" id="user-tel" class="input-form" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" required>
+          <svg class="icon-inside-input" width="12" height="12">
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+        </div>        
+      </div>
+
+      <div class="input-wrapper">
+        <label for="user-email" class="label-form">Email</label>
+        <div class="input-wrapper-icon">
+          <input type="email" class="input-form" name="user-email" id="user-email">
+          <svg class="icon-inside-input" width="12" height="12">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>        
+      </div>
+
+      <div class="input-wrapper input-wrapper-comment">
+        <label for="comment" class="label-form">Comment</label>
+        <textarea class="comment-input" required
+        placeholder="Text input" name="comment" id="comment"
+        ></textarea>
+      </div>
+
+      <div class="input-checkbox-wrapper">
+        <input type="checkbox" class="input-form-checkbox visually-hidden"   id="privacy-policy" name="privacy-policy" value="true" required>
+        <label for="privacy-policy" class="label-form-checkbox">
+          <span class="ckeckmark-span">
+            <svg class="check-mark-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-checkmark"></use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the <a class="privacy" href="#">Privacy Policy</a></label>
+      </div>
+      <button class="send-form" type="submit">Send</button>
+      
+    </form>
+    
+
+  </div>
+ </div>
+
 </body>
 </html>
